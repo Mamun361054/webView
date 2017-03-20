@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_sign_up_owner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk"
+    tools:context="com.example.sabbir.homerent.SignUpRenter"
+    tools:showIn="@layout/activity_sign_up_owner">
+
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Owner Sign Up"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/lay2"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* First Name"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* Last Name"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lay3"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText android:id="@+id/OwnerFirstName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:background="@drawable/textview"
+                android:padding="4dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+            <EditText android:id="@+id/OwnerLastName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:inputType="textCapWords"
+                android:background="@drawable/textview"
+                android:padding="4dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lay4"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* Home Name"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <EditText android:id="@+id/OwnerHomeName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:background="@drawable/textview"
+                android:padding="4dp"
+                android:gravity="center_horizontal"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lay5"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* Home Address"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <EditText android:id="@+id/OwnerHomeAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:background="@drawable/textview"
+                android:padding="4dp"
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay6"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* Home Photo"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/textview"
+                    android:layout_weight="53"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="15dp"
+                    android:text="Browse"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/textview"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay7"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* How Many Floor?"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <EditText android:id="@+id/OwnerHomeFloor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:background="@drawable/textview"
+                android:padding="4dp"
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay8"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* How Many Flat?                 "
+                android:textSize="13dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* How Many Flat For Rent?"
+                android:textSize="13dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay9"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText android:id="@+id/OwnerNoOfFlat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:background="@drawable/textview"
+                android:padding="4dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+            <EditText android:id="@+id/OwnerNoOfFlatRent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:inputType="number"
+                android:background="@drawable/textview"
+                android:padding="4dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay10"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* How Many Flat In A Floor?"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/textView" />
+
+            <EditText android:id="@+id/OwnerNoOfFlatInAFloor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:background="@drawable/textview"
+                android:padding="4dp"
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay11"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* Family Member"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <EditText android:id="@+id/OwnerFamilyMember"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:background="@drawable/textview"
+                android:padding="4dp"
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lay12"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* Member 1"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* Member 2"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* Member 3"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* Member 4"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay13"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText android:id="@+id/OwnerMem1"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:inputType="textCapWords"
+                android:background="@drawable/textview"
+                android:padding="4dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+            <EditText android:id="@+id/OwnerMem2"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="2dp"
+                android:inputType="textCapWords"
+                android:background="@drawable/textview"
+                android:padding="4dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+            <EditText android:id="@+id/OwnerMem3"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_height="60dp"
+                android:inputType="textCapWords"
+                android:background="@drawable/textview"
+                android:padding="4dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+            <EditText android:id="@+id/OwnerMem4"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="2dp"
+                android:inputType="textCapWords"
+                android:background="@drawable/textview"
+                android:padding="4dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay14"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:padding="4dp"
+                android:textColor="#fff"
+                android:background="@drawable/button"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

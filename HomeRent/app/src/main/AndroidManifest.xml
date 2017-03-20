@@ -8,6 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +19,19 @@
         <activity
             android:name=".SignUpPage"
             android:label="@string/title_activity_sign_up_page"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignUpOwner"
+            android:label="@string/title_activity_sign_up_owner"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustPan"/>
+        <activity
+            android:name=".SignUpRenter"
+            android:label="@string/title_activity_sign_up_renter"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustPan">
+        </activity>
+
     </application>
 
 </manifest>
