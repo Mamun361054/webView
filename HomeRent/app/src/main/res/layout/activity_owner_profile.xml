@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@drawable/ownerprofileimg"
+    >
+
+<LinearLayout  xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_owner_profile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.sabbir.homerent.OwnerProfile">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/housebanner"
+        android:id="@+id/owner_house_banner_img"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="10dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="address : "
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Los angles,road-26,house-A2"
+                android:id="@+id/owner_house_address"
+                android:textColor="#000"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="city : "
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Los angles"
+                android:id="@+id/owner_city"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="state : "
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="7dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="verginia"
+                android:id="@+id/owner_state"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zip : "
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1209"
+                android:id="@+id/owner_zip"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Floor No : "
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C-6"
+                android:id="@+id/owner_floor_no"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Member Detail's : "
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:padding="5dp"
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:id="@+id/owner_profile_member_one_img"
+                android:src="@drawable/memberdemo"
+                />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="namira mou"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:id="@+id/owner_profile_member_one_name"
+                android:layout_below="@+id/owner_profile_member_one_img"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:padding="5dp"
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:id="@+id/owner_profile_member_two_img"
+                android:src="@drawable/memberdemo"
+                />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="shakira"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:id="@+id/owner_profile_member_two_name"
+                android:layout_below="@+id/owner_profile_member_two_img"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:padding="5dp"
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:id="@+id/owner_profile_member_three_img"
+                android:src="@drawable/memberdemo"
+                />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="medona"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:id="@+id/owner_profile_member_three_name"
+                android:layout_below="@+id/owner_profile_member_three_img"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:padding="5dp"
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:id="@+id/owner_profile_member_four_img"
+                android:src="@drawable/memberdemo"
+                />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Hattipu"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:id="@+id/owner_profile_member_four_name"
+                android:layout_below="@+id/owner_profile_member_four_img"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Staff Detail's : "
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:padding="5dp"
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:id="@+id/owner_profile_staff_one_img"
+                android:src="@drawable/staffdemo"
+                />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="akkash"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:id="@+id/owner_profile_staff_one_name"
+                android:layout_below="@+id/owner_profile_staff_one_img"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:padding="5dp"
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:id="@+id/owner_profile_staff_two_img"
+                android:src="@drawable/staffdemo"
+                />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="puel"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:id="@+id/owner_profile_staff_two_name"
+                android:layout_below="@+id/owner_profile_staff_two_img"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:padding="5dp"
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:id="@+id/owner_profile_staff_three_img"
+                android:src="@drawable/staffdemo"
+                />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="william"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:id="@+id/owner_profile_staff_three_name"
+                android:layout_below="@+id/owner_profile_staff_three_img"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:padding="5dp"
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:id="@+id/owner_profile_staff_four_img"
+                android:src="@drawable/staffdemo"
+                />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Hero Alam"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:id="@+id/owner_profile_staff_four_name"
+                android:layout_below="@+id/owner_profile_staff_four_img"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
