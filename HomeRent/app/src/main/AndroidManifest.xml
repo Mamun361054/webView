@@ -31,7 +31,8 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateVisible|adjustPan">
         </activity>
-
+        <activity android:name=".OwnerProfile"
+            />
     </application>
 
 </manifest>
