@@ -30,6 +30,7 @@
             android:name=".SignInPage"
             android:label="@string/title_activity_sign_in_page"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".OwnerProfile"/>
     </application>
 
 </manifest>
