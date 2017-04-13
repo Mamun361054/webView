@@ -7,9 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@drawable/bk"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.sabbir.homerent.Front"
-    tools:showIn="@layout/activity_sign_up_page">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -17,16 +15,29 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_height="300dp" />
-    <Button
+    <TextView
         android:layout_width="300dp"
         android:background="@drawable/bg_round_rect"
         android:gravity="center"
         android:text="Sign Up As A Home Owner"
         android:textSize="18dp"
-
+        android:onClick="homeownerreg"
+        android:clickable="true"
         android:layout_marginBottom="10dp"
         android:layout_gravity="center"
         android:textColor="#fff"
-        android:layout_height="wrap_content" />
+        android:layout_height="50dp" />
+    <TextView
+        android:layout_width="300dp"
+        android:background="@drawable/bg_round_rect"
+        android:gravity="center"
+        android:text="Home Owner Profile"
+        android:textSize="18dp"
+        android:onClick="profile"
+        android:clickable="true"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:layout_height="50dp" />
 
 </LinearLayout>

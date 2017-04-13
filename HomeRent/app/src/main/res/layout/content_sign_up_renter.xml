@@ -4,15 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/content_sign_up_renter"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:background="@drawable/bk"
+    android:layout_height="match_parent"
     tools:context="com.example.sabbir.homerent.SignUpRenter"
     tools:showIn="@layout/activity_sign_up_renter">
 
 
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Renter Sign Up"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:layout_below="@id/lay1">
 
         <LinearLayout
             android:orientation="vertical"
@@ -22,22 +42,34 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp">
 
-            <LinearLayout
-                android:id="@+id/lay1"
-                android:layout_width="fill_parent"
+            <RelativeLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_gravity="center">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Renter Sign Up"
-                    android:gravity="center"
-                    android:textSize="25dp"
-                    android:textColor="#000000"
-                    android:textStyle="bold"/>
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/ivImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/proficon"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp" />
 
-            </LinearLayout>
+                <Button
+                    android:id="@+id/btnSelectPhoto"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textSize="15dp"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginLeft="85dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/four" />
+
+
+            </RelativeLayout>
+
+
 
             <LinearLayout
                 android:id="@+id/lay2"
@@ -81,7 +113,6 @@
                     android:inputType="textCapWords"
                     android:background="@drawable/textview"
                     android:padding="4dp"
-                    android:gravity="center_horizontal"
                     android:layout_weight="1"/>
 
                 <EditText android:id="@+id/RenterLastName"
@@ -91,7 +122,6 @@
                     android:inputType="textCapWords"
                     android:background="@drawable/textview"
                     android:padding="4dp"
-                    android:gravity="center_horizontal"
                     android:layout_weight="1"/>
 
 
@@ -117,8 +147,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="textCapWords"
                     android:background="@drawable/textview"
-                    android:padding="4dp"
-                    android:gravity="center_horizontal"/>
+                    android:padding="4dp" />
 
 
             </LinearLayout>
@@ -138,13 +167,30 @@
                     android:textColor="#000000"
                     android:textStyle="bold"/>
 
-                <EditText android:id="@+id/RenterPhone"
+                <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="phone"
-                    android:background="@drawable/textview"
-                    android:padding="4dp"
-                    android:gravity="center_horizontal"/>
+                    android:orientation="horizontal">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:defaultNameCode="BD"
+                        app:contentColor="@color/colorAccent" />
+
+                    <EditText android:id="@+id/RenterPhone"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:background="@drawable/textview"
+                        android:padding="4dp" />
+
+                </LinearLayout>
+
+
+
 
             </LinearLayout>
 
@@ -168,8 +214,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
                     android:background="@drawable/textview"
-                    android:padding="4dp"
-                    android:gravity="center_horizontal"/>
+                    android:padding="4dp" />
 
             </LinearLayout>
 
@@ -188,17 +233,30 @@
                     android:textStyle="bold"/>
 
                 <LinearLayout
+                    android:onClick="onClick"
+                    android:clickable="true"
                     android:orientation="horizontal"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
 
-                    <EditText android:id="@+id/RenterMonth"
+
+                    <TextView
+                        android:id="@+id/displayDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/textview"
+                        android:textSize="18dp"
+                        android:text="Pick a Date"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textStyle="normal"/>
+
+                    <!--<EditText android:id="@+id/RenterMonth"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textCapWords"
                         android:background="@drawable/textview"
                         android:padding="4dp"
-                        android:gravity="center_horizontal"
                         android:hint="Month"
                         android:layout_weight="1"/>
 
@@ -210,7 +268,6 @@
                         android:padding="4dp"
                         android:hint="Date"
                         android:layout_marginLeft="2dp"
-                        android:gravity="center_horizontal"
 
                         android:layout_weight="1"/>
 
@@ -221,9 +278,8 @@
                         android:background="@drawable/textview"
                         android:padding="4dp"
                         android:layout_marginLeft="2dp"
-                        android:gravity="center_horizontal"
                         android:hint="Year"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1"/>-->
 
 
                 </LinearLayout>
@@ -253,8 +309,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="textCapWords"
                     android:background="@drawable/textview"
-                    android:padding="4dp"
-                    android:gravity="center_horizontal"/>
+                    android:padding="4dp" />
 
             </LinearLayout>
 
@@ -277,8 +332,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:background="@drawable/textview"
-                    android:padding="4dp"
-                    android:gravity="center_horizontal"/>
+                    android:padding="4dp" />
 
             </LinearLayout>
 
@@ -335,45 +389,41 @@
                 android:id="@+id/lay13"
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="70dp">
 
                 <EditText android:id="@+id/RenterMem1"
                     android:layout_width="fill_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="match_parent"
                     android:inputType="textCapWords"
                     android:background="@drawable/textview"
                     android:padding="4dp"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1" />
 
                 <EditText android:id="@+id/RenterMem2"
                     android:layout_width="fill_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
                     android:inputType="textCapWords"
                     android:background="@drawable/textview"
                     android:padding="4dp"
-                    android:gravity="center_horizontal"
                     android:layout_weight="1"/>
 
                 <EditText android:id="@+id/RenterMem3"
                     android:layout_width="fill_parent"
                     android:layout_marginLeft="2dp"
-                    android:layout_height="60dp"
+                    android:layout_height="match_parent"
                     android:inputType="textCapWords"
                     android:background="@drawable/textview"
                     android:padding="4dp"
-                    android:gravity="center_horizontal"
                     android:layout_weight="1"/>
 
                 <EditText android:id="@+id/RenterMem4"
                     android:layout_width="fill_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
                     android:inputType="textCapWords"
                     android:background="@drawable/textview"
                     android:padding="4dp"
-                    android:gravity="center_horizontal"
                     android:layout_weight="1"/>
 
             </LinearLayout>
@@ -395,10 +445,8 @@
                     android:background="@drawable/button"/>
             </LinearLayout>
 
-
-
-
         </LinearLayout>
+
     </ScrollView>
 
 </RelativeLayout>

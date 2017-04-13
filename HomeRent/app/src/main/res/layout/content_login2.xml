@@ -47,8 +47,8 @@
 
                     android:gravity="center"
                     android:textSize="20dip"
-                    android:text="Already Have Homerent Onwer \naccount? login bellow!"
-                    android:textColor="#4a90b6"
+                    android:text="Already Have Renter \naccount? login bellow!"
+                    android:textColor="#f4450b"
 
                     android:textStyle="bold" />
 
@@ -65,7 +65,7 @@
                 android:layout_marginBottom="10dp"
                 android:paddingLeft="2dp"
 
-                android:background="#41bf8b"
+                android:background="#cc55d2"
                 android:orientation="horizontal">
 
 
@@ -108,7 +108,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:elevation="2dp"
-                android:background="#41bf8b"
+                android:background="#cc55d2"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="5dp"
@@ -215,7 +215,7 @@
                     android:textStyle="bold"
                     android:textSize="25dip"
 
-                    android:background="#41bf8b"
+                    android:background="#cc55d2"
                     android:textColor="#000000"/>
 
 
