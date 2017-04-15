@@ -5,9 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.sabbir.homerent.SignUpRenter">
+    tools:context="com.example.sabbir.homerent.login2">
 
-    <include layout="@layout/content_sign_up_renter" />
+
+    <include layout="@layout/content_login2" />
+
 
 
 </android.support.design.widget.CoordinatorLayout>
