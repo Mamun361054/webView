@@ -25,13 +25,11 @@ import com.example.sabbir.homerent.app.AppController;
 import com.example.sabbir.homerent.helper.SQLiteHandler;
 import com.example.sabbir.homerent.helper.SessionManager;
 
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -158,7 +156,7 @@ public class SignUpOwner extends Activity {
 
     }
 
-    public String getStringImage(Bitmap bmp) {
+       public String getStringImage(Bitmap bmp) {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         bmp.compress(Bitmap.CompressFormat.JPEG, 100, baos);
         byte[] imageBytes = baos.toByteArray();

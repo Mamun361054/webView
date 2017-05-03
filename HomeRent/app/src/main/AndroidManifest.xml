@@ -40,8 +40,15 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".OwnerProfile"
-            android:label="@string/title_activity_sign_in_page"
+            android:label="OwnerProfile"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Image_Select"
+            android:label="Image_Select"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
         <activity
             android:name=".login2"
             android:label="@string/title_activity_login2"
