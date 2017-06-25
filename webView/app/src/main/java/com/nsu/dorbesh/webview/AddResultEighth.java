@@ -115,37 +115,41 @@ public class AddResultEighth extends AppCompatActivity {
 
         if(GPA.equals("4.0"))
         {
-            Lettergrade = "A+";
-        }
-        else if(GPA.equals("3.75"))
-        {
             Lettergrade = "A";
         }
-        else if(GPA.equals("3.50"))
+        else if(GPA.equals("3.70"))
         {
             Lettergrade = "A-";
         }
-        else if(GPA.equals("3.25"))
+        else if(GPA.equals("3.30"))
         {
             Lettergrade = "B+";
         }
-        else if(GPA.equals("3.0"))
+        else if(GPA.equals("3.00"))
         {
             Lettergrade = "B";
         }
-        else if(GPA.equals("2.75"))
+        else if(GPA.equals("2.70"))
         {
             Lettergrade = "B-";
         }
-        else if(GPA.equals("2.50"))
+        else if(GPA.equals("2.30"))
         {
             Lettergrade = "C+";
         }
-        else if(GPA.equals("2.25"))
+        else if(GPA.equals("2.00"))
         {
             Lettergrade = "C";
         }
-        else if(GPA.equals("2.0"))
+        else if(GPA.equals("1.70"))
+        {
+            Lettergrade = "C-";
+        }
+        else if(GPA.equals("1.3"))
+        {
+            Lettergrade = "D+";
+        }
+        else if(GPA.equals("1.00"))
         {
             Lettergrade = "D";
         }

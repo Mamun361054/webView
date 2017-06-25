@@ -11,8 +11,8 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/cgpa"
-            android:icon="@drawable/profile"
-            android:title="CGPA" />
+            android:icon="@drawable/unnamed"
+            android:title="My CGPA" />
     </group>
 
     <item android:title="Faculties">
